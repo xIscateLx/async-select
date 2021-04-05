@@ -1,0 +1,94 @@
+.selectComponent {
+  margin: 10px auto;
+  position: relative;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #000000;
+  border-radius: 0 0 6px 6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px 0;
+  box-sizing: border-box;
+  max-height: 300px;
+  min-height: 40px;
+  overflow: auto;
+}
+
+.option {
+  padding: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+
+  &:hover, &:focus, &:active {
+    background-color: #dbe3ea;
+  }
+}
+
+.optionSelected {
+  background-color: #dbe3ea;
+}
+
+.optionEmpty {
+  align-self: center;
+
+  &:hover, &:focus, &:active {
+    background-color: #fff;
+  }
+}
+
+.selectInput {
+  position: relative;
+}
+
+.display {
+  position: absolute;
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 25%;
+  font-size: 15px;
+}
+
+.field {
+  height: 40px;
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background-color: #ebf1f1;
+
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #768086
+  }
+}
+
+.fieldWithOptions {
+  border-radius: 6px 6px 0 0;
+  border-bottom: 0;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  color: #768086
+}

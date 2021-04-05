@@ -1,0 +1,20 @@
+.App {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-btn {
+  background: transparent;
+  font-size: 24px;
+  padding: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
